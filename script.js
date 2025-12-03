@@ -44,7 +44,7 @@ function playGame () {
         console.log(`Human score: ${humanScore}, Computer Score: ${computerScore}`);
     }
 
-    console.log((humanScore > computerScore) ? `You win with a score of: ${humanScore}!!` : `Computer wins with a score of: ${computerScore}!!`)
+    console.log((humanScore > computerScore) ? `You win with a score of: ${humanScore}!!` : (humanScore < computerScore) ? `Computer wins with a score of: ${computerScore}!!` : `It's a draw with a score of ${humanScore}`);
 }
 
 
